@@ -252,3 +252,29 @@ input:focus, textarea:focus{border-color: rgba(44,242,209,.45);}
 }
 .dot{width:8px; height:8px; border-radius:999px; background: rgba(255,255,255,.22);}
 .dot.active{background: linear-gradient(90deg, var(--brand1), var(--brand2));}
+
+
+/* Mobile polish fixes */
+@media (max-width: 980px){
+  .container{width: min(var(--max), calc(100% - 28px));}
+  .hero__content{align-items: stretch;}
+  .hero__left{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .chip{justify-content:center; text-align:center;}
+  .hero__left .lead, .hero__left h1{max-width: 640px;}
+  .hero__cta{width:100%;}
+  .hero__cta a{flex: 1 1 220px;}
+  .hero__cta .btn{width:100%;}
+  .hero__trust{width:100%;}
+  .trust__item{width:100%;}
+  .glass-card{max-width: 720px; margin: 0 auto;}
+  .carousel__track{scroll-padding-left: 10px; scroll-padding-right: 10px;}
+  .carousel__card{min-width: 92%;}
+}
+@media (max-width: 380px){
+  .hero h1{font-size: 28px;}
+  .btn{padding: 13px 16px;}
+}
